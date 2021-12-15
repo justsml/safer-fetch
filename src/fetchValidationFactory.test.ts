@@ -108,10 +108,10 @@ describe("fetchValidationFactory", () => {
     const callback = jest.fn();
     const fetchValidator = fetchFactory(
       {
-        'POST:/notes': {
-          'request': (data) => schema_note.parse(data),
-          'response': (data) => schema_id_and_note.parse(data),
-        }
+        "POST:/notes": {
+          request: (data) => schema_note.parse(data),
+          response: (data) => schema_id_and_note.parse(data),
+        },
       },
       { callback, ignoreErrors: true }
     );
@@ -122,7 +122,7 @@ describe("fetchValidationFactory", () => {
     })
       .then((response) => response.json())
       .then((_data) => {
-        expect(callback.mock.calls[0]?.[0]?.mode).toBe('response')
+        expect(callback.mock.calls[0]?.[0]?.mode).toBe("response");
       });
   });
 });

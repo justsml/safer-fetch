@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-redeclare */
 import type { HeadersInit, RequestInit, Response } from "node-fetch";
 import { pathToRegexp } from "path-to-regexp";
+import { URL } from "url";
 import { HttpPathRules, Rules } from "..";
 
 type RuleMatcher<TInput, TOutput> = (

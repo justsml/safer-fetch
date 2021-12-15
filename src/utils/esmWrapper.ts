@@ -1,4 +1,3 @@
-
 export function esmWrapper<TModule>(module: TModule) {
   return () => ({
     __esModule: true,

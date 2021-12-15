@@ -16,9 +16,6 @@ export type Rules<TInput, TOutput> =
   | {
       response?: TransformFunction<TInput, TOutput> | ValidateFunction<TInput>;
       request?: TransformFunction<TInput, TOutput> | ValidateFunction<TInput>;
-      // requestBody: TransformFunction<TInput, TOutput>;
-      // requestHeaders: TransformFunction<TInput, TOutput>;
-      // requestUrl: TransformFunction<TInput, TOutput>;
     };
 
 /** pathPattern is a key expression in the following format:
@@ -33,4 +30,3 @@ export type Rules<TInput, TOutput> =
 export type HttpPathRules<TInput, TOutput> = {
   [pathPattern: string]: Rules<TInput, TOutput>;
 };
-
