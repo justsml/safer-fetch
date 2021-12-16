@@ -9,7 +9,11 @@
     "test": "jest"
   },
   "keywords": [],
-  "author": "",
+  "homepage": "https://github.com/justsml/fetch-safely",
+  "author": {
+    "name": "Dan Levy",
+    "url": "https://danlevy.net/"
+  },
   "license": "ISC",
   "peerDependencies": {
     "node-fetch": "v2",
